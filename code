@@ -1,0 +1,19 @@
+// Program Name: Triangle Hypotenuse Finder
+// Author Name: VoxelKid
+// Date Last Edited: 1/9/2023
+// Purpose: This is a program I wrote that given two non-hypotenuse sides of a triangle will give the user the unknown hypotenuse of a given triangle.
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		Console.Write("Please give the length of the first side of the triangle.");
+		double sideA = float.Parse(Console.ReadLine());
+		Console.Write("Please give the length of the second side of the triangle.");
+		double sideB = float.Parse(Console.ReadLine());
+		double hypotenuse = Math.Sqrt(((sideA * sideA) + (sideB * sideB)));
+		Console.Write("The hypotenuse of the triangle is: " + Math.Round(hypotenuse, 3));
+	}
+}
